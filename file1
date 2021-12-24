@@ -1,0 +1,171 @@
+import turtle 
+
+
+#screen 
+width = height = 500 
+window = turtle.Screen() 
+window.setup(width, height) 
+window.bgcolor("light blue") 
+
+#pen
+turtle.speed(0)
+text = turtle.Turtle() 
+text.color("red") 
+text.penup() 
+text.setposition(-10,200) 
+text.write("Merry Christmas", font=("Apple Chancery", 30, "bold"), align="center") 
+text.hideturtle() 
+
+turtle.speed(0)
+
+
+# Tree Trunk
+turtle.penup()
+turtle.goto(-15, -100)
+turtle.pendown()
+turtle.color("brown")
+turtle.begin_fill()
+for i in range(2):
+    turtle.forward(30)
+    turtle.right(90)
+    turtle.forward(40)
+    turtle.right(90)
+turtle.end_fill()
+
+# Set the start position and the inital tree width
+x=100
+y = -100
+width = 320
+height = 25
+size=20
+# Green section of tree (add in the greater than symbol next to the 20 - YouTube doesn't allow me to put in pointy brackets).
+while width>20:
+    width = width - 30 # Make the tree get smaller as it goes up in height
+    x = 0 - width / 2 # Set the starting x-value of each level of the tree
+    turtle.color("green")
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.begin_fill()
+    for i in range(2):
+        turtle.forward(width)
+        turtle.left(90)
+        turtle.forward(height)
+        turtle.left(90)
+    turtle.end_fill()
+    
+    y = y + height
+#star 
+def colored_star():
+     
+    # size of star
+    size = 20
+     
+    # object color
+    turtle.color("gold")
+     
+    # object width
+    turtle.width(4)
+     
+    # angle to form star
+    angle = 140
+    turtle.penup()
+    turtle.goto(5,180)
+    # color to fill
+    turtle.fillcolor("gold")
+    turtle.pendown()
+    turtle.begin_fill()
+     
+    # form star
+    for side in range(5):
+        turtle.forward(size)
+        turtle.right(angle)
+        turtle.forward(size)
+        turtle.right(72 - angle)
+         
+    # fill color
+    turtle.end_fill()
+ 
+# Driver code
+colored_star()
+
+
+#lights 
+colors = ["red","blue","yellow","magenta","purple","silver","gold"]
+
+s1 = turtle.Turtle()
+s2 = turtle.Turtle()
+s3 = turtle.Turtle()
+s4 = turtle.Turtle()
+s5 = turtle.Turtle()
+s6 = turtle.Turtle()
+s7 = turtle.Turtle()
+s8 = turtle.Turtle()
+s9 = turtle.Turtle()
+s10 = turtle.Turtle()
+
+
+s1.penup()
+s1.setpos(-45,100)
+s1.down()
+s1.hideturtle()
+
+s2.penup()
+s2.setpos(45,100)
+s2.down()
+s2.hideturtle()
+
+s3.penup()
+s3.setpos(-95,25)
+s3.down()
+s3.hideturtle()
+
+s4.penup()
+s4.setpos(95,25)
+s4.down()
+s4.hideturtle() 
+
+s5.penup()
+s5.setpos(-140,-50)
+s5.down()
+s5.hideturtle() 
+
+s6.penup()
+s6.setpos(50,-50)
+s6.down()
+s6.hideturtle() 
+
+s7.penup()
+s7.setpos(140,-50)
+s7.down()
+s7.hideturtle() 
+
+s8.penup()
+s8.setpos(30,30)
+s8.down()
+s8.hideturtle() 
+
+s9.penup()
+s9.setpos(-30,60)
+s9.down()
+s9.hideturtle() 
+
+s10.penup()
+s10.setpos(-50,-20)
+s10.down()
+s10.hideturtle() 
+
+m = 0
+while True:
+  s1.dot(20,colors[m%3])
+  s2.dot(20,colors[(m+1)%2])
+  s3.dot(20,colors[(m+2)%2])
+  s4.dot(20,colors[(m+3)%6])
+  s5.dot(20,colors[(m+4)%4])
+  s6.dot(20,colors[(m+5)%5])
+  s7.dot(20,colors[(m+6)%4])
+  s8.dot(20,colors[(m+7)%5])
+  s9.dot(20,colors[(m+8)%7])
+  s10.dot(20,colors[(m+9)%3])
+  m = m+1 
+
