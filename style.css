@@ -1,0 +1,22 @@
+*
+{
+    margin: 1.5;
+    padding: 1;
+    box-sizing: border-box;
+    background-color:grey;
+
+
+}
+.profile_img
+{
+    
+    float:right;
+
+  
+}
+.profile_img img
+{
+    width: 100%;
+    height: 50%;
+
+}
