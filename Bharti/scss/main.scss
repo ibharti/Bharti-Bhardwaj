@@ -1,4 +1,29 @@
+@import './resets';
+@import './variables';
+
 body{
-    background: lightgray;
+    background: $primary-color;
+    color:$text-color;
+    font-weight: map-get($font-weights, bold );
+    
+
+}
+.main{
+width:80%;
+margin: 0 auto;
+&:hover{
+    color:$accent-color;
+}
+
+
+    #{&}_p{
+        font-weight: map-get($font-weights, basic); 
+        
+    }
+    // #{&}_p2{
+       
+        
+    // }
+
 
 }
