@@ -1,9 +1,24 @@
 .home{
     height:100%;
-    padding: 40vh;
+    padding-top: 40vh;
     overflow: hidden;
     align-items: center;
     text-align: center;
-    background:url('../1125x2436-Wallpaper-296.jpg');
+    background:
+     linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+     ),
+     url('../b3ozgl2xy2u61.png') center top;
     background-size: cover;
+    &__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid whitesmoke;
+        &--last{
+            color:$secondary-color;
+            font-weight: 700;   
+        }
+    }
 }

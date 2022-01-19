@@ -1,20 +1,75 @@
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin: auto;
-  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .home {
   height: 100%;
-  padding: 40vh;
+  padding-top: 40vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../1125x2436-Wallpaper-296.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(40, 40, 40, 0.9)), to(rgba(40, 40, 40, 0.3))), url("../b3ozgl2xy2u61.png") center top;
+  background: linear-gradient(to right, rgba(40, 40, 40, 0.9), rgba(40, 40, 40, 0.3)), url("../b3ozgl2xy2u61.png") center top;
   background-size: cover;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.home__name--last {
+  color: #DAA06D;
+  font-weight: 700;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+}
+
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+  width: 28px;
+  height: 3px;
+  background-color: #282828;
+}
+
+.menu-btn__burger::before {
+  content: '';
+  top: -8px;
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #282828;
+}
+
+.menu-btn__burger::after {
+  content: '';
+  top: 8px;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #282828;
+}
+
+.menu-btn__burger.open {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  background: transparent;
 }
 
 body {
@@ -54,6 +109,8 @@ main .socialIcons {
 
 main .socialIcons a {
   padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 main .socialIcons a:hover {
