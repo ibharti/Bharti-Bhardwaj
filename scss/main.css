@@ -61,7 +61,7 @@
   background: #c97a36;
 }
 .menu-btn__burger.open {
-  transform: rotate(90deg);
+  transform: rotate(720deg);
   background: transparent;
 }
 
