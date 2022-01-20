@@ -10,12 +10,12 @@
         rgba($primary-color,0.9),
         rgba($primary-color,0.3)
      ),
-     url('../b3ozgl2xy2u61.png') center top;
+     url('../wall.png') center top;
     background-size: cover;
     &__name{
         font-size: 5rem;
         padding-bottom: 1rem;
-        border-bottom: 2px solid whitesmoke;
+        border-bottom: 2px solid #282828;
         &--last{
             color:$secondary-color;
             font-weight: 700;   

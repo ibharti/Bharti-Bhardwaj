@@ -5,8 +5,10 @@
     top: 1rem;
     height: 20px;
     width: 28px;
+    margin-top: 8px;
     cursor:pointer;    
     @include transition-ease;
+    color: $secondary-color;
 
 
 
@@ -23,7 +25,7 @@
         content:'';
         position:absolute;
         top: -8px;
-                width:28px;
+        width:28px;
         height:3px;
         background:$secondary-color;
         }
@@ -36,8 +38,9 @@
             background:$secondary-color;
         }
         &.open{
-            transform: rotate(720deg);
+            transform: rotate(90deg);
             background: transparent;
         }
     }
 }
+
