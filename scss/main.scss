@@ -23,13 +23,13 @@ a{
 }
 header{
     
-    color:$text-color;
+    position: fixed;
     z-index:2;
     width: 100%;
     padding: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 1000;
-}
+    }
+    
+    
 main{
     height:100%;
     width:100%;

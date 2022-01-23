@@ -25,7 +25,7 @@
 
 .menu-btn {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -40,7 +40,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background-color: #c97a36;
+  background: #c97a36;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
@@ -55,7 +55,7 @@
   content: "";
   position: absolute;
   top: 8px;
-  width: 20px;
+  width: 28px;
   height: 3px;
   background: #c97a36;
 }
@@ -67,7 +67,6 @@
   transform: rotate(44deg) translate(5px, 8px);
 }
 .menu-btn__burger.open::after {
-  width: 28px;
   transform: rotate(-44deg) translate(3px, -7px);
 }
 
@@ -76,7 +75,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  opacity: 0.9;
+  opacity: 0.98;
   visibility: hidden;
 }
 .nav.open {
@@ -108,7 +107,15 @@
   color: #282828;
   transition: all 0.5s ease-in-out;
 }
-.nav .menu-nav__item.active > a:hover {
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
   color: #c97a36;
 }
 
@@ -130,12 +137,10 @@ a {
 }
 
 header {
-  color: #282828;
+  position: fixed;
   z-index: 2;
   width: 100%;
   padding: 1rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 1000;
 }
 
 main {
