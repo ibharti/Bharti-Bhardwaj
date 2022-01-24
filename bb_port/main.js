@@ -3,7 +3,7 @@ const hamburger = document.querySelector('.menu-btn__burger');
 
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
-const navItem = document.querySelector('.menu-nav__item');
+const navItem = document.querySelectorAll('.menu-nav__item');
 
 let showMenu = false;
 
@@ -18,12 +18,11 @@ function toggleMenu() {
         navItem.forEach(item => item.classList.add('open'));
 
         showMenu = true;
-    }
-    else {
+    } else {
+
+
 
         hamburger.classList.remove('open');
-
-
         nav.classList.remove('open');
         menuNav.classList.remove('open');
 
