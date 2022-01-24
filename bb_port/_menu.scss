@@ -12,6 +12,7 @@
 
 
 
+
     &__burger{  
     position: absolute;
     right:0;
@@ -28,6 +29,7 @@
         width:28px;
         height:3px;
         background:$secondary-color;
+        @include transition-ease;
         }
 
         &::after{
@@ -37,6 +39,7 @@
             width:28px;
             height:3px;
             background:$secondary-color;
+            @include transition-ease;
         }
 
         &.open {
@@ -54,6 +57,7 @@
         }
     }
 }
+
 .nav{
     position: fixed;
     top:0;
@@ -63,8 +67,8 @@
     visibility: hidden;
 
     &.open{
-
         visibility: visible;
+        @include transition-ease;
     }
     .menu-nav{
          
@@ -78,28 +82,37 @@
          list-style-type: none;
          transform: translateY(-100%);
          @include transition-ease;
+
          &.open{
           transform: translateY(0);
+          @include transition-ease;
             }
+        
           &__item{
-           transform: translateX(100vw);
+           transform: translateX(100px);
             @include transition-ease;
+ 
            &.open{
-                transform: translateX(0);
-            }
-           &.active > a{
-             color: $text-color;
-             @include transition-ease;
+            transform: translateX(0);
+            @include transition-ease;
+           }
+            
+           &.active {
+             color: $secondary-color;
+             
           
             }
+          
         }
-        &__link{
+            &__link
+            {
             display: inline-block;
             font-size: 2rem;
             text-transform: uppercase;
             padding:2rem 0 ;
             font-weight: 300;
             @include transition-ease;
+
             &:hover{
                 color: $secondary-color;
             }
@@ -107,6 +120,13 @@
     }
 }
 
+@for $i from 1 through 5
+{
+    .menu-nav__item:nth-child(#{$i})
+    {
+        transition-delay:($i*0.1s)+0.10s;
+    }
+}
 
 
         

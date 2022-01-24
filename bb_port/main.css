@@ -17,6 +17,7 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #282828;
+  margin-bottom: 1rem;
 }
 .home__name--last {
   color: #c97a36;
@@ -31,7 +32,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   color: #c97a36;
 }
 .menu-btn__burger {
@@ -41,7 +42,7 @@
   width: 28px;
   height: 3px;
   background: #c97a36;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .menu-btn__burger::before {
   content: "";
@@ -50,6 +51,7 @@
   width: 28px;
   height: 3px;
   background: #c97a36;
+  transition: all 1s ease-in-out;
 }
 .menu-btn__burger::after {
   content: "";
@@ -58,6 +60,7 @@
   width: 28px;
   height: 3px;
   background: #c97a36;
+  transition: all 1s ease-in-out;
 }
 .menu-btn__burger.open {
   transform: rotate(720deg);
@@ -80,6 +83,7 @@
 }
 .nav.open {
   visibility: visible;
+  transition: all 1s ease-in-out;
 }
 .nav .menu-nav {
   display: flex;
@@ -91,21 +95,22 @@
   background: #cfcdcd;
   list-style-type: none;
   transform: translateY(-100%);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
+  transition: all 1s ease-in-out;
 }
 .nav .menu-nav__item {
-  transform: translateX(100vw);
-  transition: all 0.5s ease-in-out;
+  transform: translateX(100px);
+  transition: all 1s ease-in-out;
 }
 .nav .menu-nav__item.open {
   transform: translateX(0);
+  transition: all 1s ease-in-out;
 }
-.nav .menu-nav__item.active > a {
-  color: #282828;
-  transition: all 0.5s ease-in-out;
+.nav .menu-nav__item.active {
+  color: #c97a36;
 }
 .nav .menu-nav__link {
   display: inline-block;
@@ -113,10 +118,30 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .nav .menu-nav__link:hover {
   color: #c97a36;
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.5s;
+}
+
+.menu-nav__item:nth-child(5) {
+  transition-delay: 0.6s;
 }
 
 body {
@@ -134,6 +159,10 @@ h1, h2, h3 {
 a {
   color: #282828;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: #c97a36;
 }
 
 header {
@@ -155,7 +184,7 @@ main .socialIcons {
 }
 main .socialIcons a {
   padding: 0.4rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 main .socialIcons a:hover {
   color: #c97a36;
