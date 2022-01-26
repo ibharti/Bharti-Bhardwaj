@@ -1,0 +1,28 @@
+.contact{
+    height:100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    background:
+     linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+     ),
+     url('../wall.png') center top;
+    background-size: cover;
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+    }
+    &__list{
+        display:grid;
+        grid-template-columns: 1fr;
+        font-size: 1.5rem;
+        
+
+
+    }
+}
