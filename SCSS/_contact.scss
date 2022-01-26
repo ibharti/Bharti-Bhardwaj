@@ -4,6 +4,7 @@
     overflow: hidden;
     display:flex;
     flex-direction: column;
+    align-items: center;
     background:
      linear-gradient(
         to right,
@@ -25,6 +26,12 @@
         font-size: 1.5rem;
 
 
+
+    }
+    .socialIcons{
+        position:initial ;
+        margin-top: 2rem;
+        
 
     }
 }
