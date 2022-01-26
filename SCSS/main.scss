@@ -39,7 +39,8 @@ main{
     height:100%;
     width:100%;
     .socialIcons{
-        position:fixed;
+        position:initial ;
+        margin-top: 2rem;
         bottom:1rem;
         left:1rem;
         color:$text-color;
