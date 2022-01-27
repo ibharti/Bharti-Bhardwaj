@@ -22,7 +22,7 @@
     }
     &__list{
         display:grid;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 2rem;
         font-size: 1.5rem;
 
