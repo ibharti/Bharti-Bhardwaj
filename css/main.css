@@ -10,7 +10,12 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(207, 205, 205, 0.9), rgba(207, 205, 205, 0.3)), url("../wall.png") center top;
+  background: linear-gradient(
+      to right,
+      rgba(207, 205, 205, 0.9),
+      rgba(207, 205, 205, 0.3)
+    ),
+    url("../wall.png") center top;
   background-size: cover;
 }
 .home__name {
@@ -151,7 +156,9 @@ body {
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
@@ -197,4 +204,4 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #282828;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
