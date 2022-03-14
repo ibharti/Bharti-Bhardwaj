@@ -20,8 +20,8 @@
   &__list {
     display: grid;
     // border: 1rem solid $secondary-color;
-    grid-template-rows: 3fr;
-    row-gap: 3rem;
+    grid-template-columns: 3fr;
+    column-gap: 2rem;
     // font-size: 2rem;
   }
   .socialIcons {

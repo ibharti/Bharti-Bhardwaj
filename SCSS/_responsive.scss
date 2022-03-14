@@ -15,7 +15,7 @@
 
       &__item {
         display: inline;
-        padding-right: 1.5rem;
+        padding-right: 2.5rem;
       }
 
       &__link {
@@ -25,7 +25,7 @@
   }
 
   &__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
   }
   .text-secondary {
     font-size: 3rem;
@@ -33,16 +33,13 @@
 }
 
 .contact__list {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
 }
 
 @include media-lg {
   .projects {
     &__items {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 2fr);
     }
-  }
-  .contact__list {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
