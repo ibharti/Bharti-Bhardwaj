@@ -1,4 +1,4 @@
-$primary-color: #cfcdcd;
+$primary-color: #fffefe;
 $secondary-color: #c97a36;
 $text-color: #282828;
 
@@ -10,4 +10,27 @@ $text-color: #282828;
 }
 @mixin transition-ease {
   transition: all 1s ease-in-out;
+}
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
 }

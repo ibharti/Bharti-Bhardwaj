@@ -3,6 +3,7 @@
 @import "menu";
 @import "projects";
 @import "contact";
+@import "responsive";
 
 body {
   background: $primary-color;
@@ -11,7 +12,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   line-height: 1;
   width: 100vw;
-  background: url("../wall.png") center top;
+  background: url("../Untitled\ design.png") center top;
 }
 h1,
 h2,

@@ -7,11 +7,11 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 20vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(207, 205, 205, 0.9), rgba(207, 205, 205, 0.3));
+  background: linear-gradient(to right, rgba(255, 254, 254, 0.9), rgba(255, 254, 254, 0.3)), url("../Untitled design.png") center top;
   background-size: cover;
 }
 .home__name {
@@ -23,6 +23,27 @@
 .home__name--last {
   color: #c97a36;
   font-weight: 700;
+}
+.home__button {
+  padding-top: 20vh;
+}
+.home__button__link {
+  text-align: center;
+  padding: 1rem;
+  font-size: xx-large;
+  border-color: #282828;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 0.5px;
+  color: #282828;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+.home__button__link:hover {
+  color: #c97a36;
+  border-color: #fffefe;
 }
 
 .menu-btn {
@@ -93,7 +114,7 @@
   width: 100vw;
   overflow: hidden;
   padding-right: 1rem;
-  background: #cfcdcd;
+  background: #fffefe;
   padding-right: 1rem;
   list-style-type: none;
   transform: translateY(-100%);
@@ -146,24 +167,29 @@
 }
 
 .projects {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  padding-top: 15vh;
 }
 .projects__bio-image .text-secondary {
   font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  color: #282828;
 }
 .projects__items {
-  width: 60vw;
+  width: 30vw;
   margin: 2rem auto 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
 }
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #cfcdcd;
   overflow: hidden;
   cursor: pointer;
 }
@@ -172,9 +198,9 @@
   position: absolute;
   top: 100%;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background: #cfcdcd;
+  height: 100vh;
+  width: 100vw;
+  background: #fffefe;
   opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -203,7 +229,7 @@
 }
 .projects__btn {
   opacity: 0;
-  color: set-text-color(#282828);
+  color: #fff;
   transition: all 1s ease-in-out;
 }
 .projects__btn:hover {
@@ -224,7 +250,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(207, 205, 205, 0.9), rgba(207, 205, 205, 0.3)), url("../wall.png") center top;
+  background: linear-gradient(to right, rgba(255, 254, 254, 0.9), rgba(255, 254, 254, 0.3)), url("../Untitled design.png") center top;
   background-size: cover;
 }
 .contact h2 {
@@ -241,14 +267,69 @@
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 50vh;
+  }
+}
 body {
-  background: #cfcdcd;
+  background: #fffefe;
   color: #282828;
   height: 100vh;
   font-family: "Times New Roman", Times, serif;
   line-height: 1;
   width: 100vw;
-  background: url("../wall.png") center top;
+  background: url("../Untitled design.png") center top;
 }
 
 h1,
