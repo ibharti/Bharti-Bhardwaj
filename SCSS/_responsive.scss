@@ -37,6 +37,12 @@
 }
 
 @include media-lg {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
   .projects {
     &__items {
       grid-template-columns: repeat(3, 2fr);
