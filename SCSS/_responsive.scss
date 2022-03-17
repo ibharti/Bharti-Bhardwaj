@@ -1,51 +1,51 @@
 @include media-md {
-  .menu-btn {
-    visibility: hidden;
-  }
+	.menu-btn {
+		visibility: hidden;
+	}
 
-  .nav {
-    visibility: visible;
+	.nav {
+		visibility: visible;
 
-    .menu-nav {
-      display: block;
-      transform: translateY(0);
-      height: 100%;
-      background: transparent;
-      text-align: right;
+		.menu-nav {
+			display: block;
+			transform: translateY(0);
+			height: 100%;
+			background: transparent;
+			text-align: right;
 
-      &__item {
-        display: inline;
-        padding-right: 2.5rem;
-      }
+			&__item {
+				display: inline;
+				padding-right: 2.5rem;
+			}
 
-      &__link {
-        font-size: 1.5rem;
-      }
-    }
-  }
+			&__link {
+				font-size: 1.5rem;
+			}
+		}
+	}
 
-  &__items {
-    grid-template-columns: repeat(2, 2fr);
-  }
-  .text-secondary {
-    font-size: 3rem;
-  }
+	&__items {
+		grid-template-columns: repeat(2, 2fr);
+	}
+	.text-secondary {
+		font-size: 3rem;
+	}
 }
 
 .contact__list {
-  grid-template-columns: repeat(2, 2fr);
+	grid-template-columns: repeat(2, 2fr);
 }
 
 @include media-lg {
-  .menu-btn {
-    visibility: hidden;
-  }
-  .nav {
-    visibility: visible;
-  }
-  .projects {
-    &__items {
-      grid-template-columns: repeat(3, 2fr);
-    }
-  }
+	.menu-btn {
+		visibility: hidden;
+	}
+	.nav {
+		visibility: visible;
+	}
+	.projects {
+		&__items {
+			grid-template-columns: repeat(3, 2fr);
+		}
+	}
 }
