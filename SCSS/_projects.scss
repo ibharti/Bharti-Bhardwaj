@@ -17,11 +17,12 @@
 	}
 
 	&__items {
-		width: 50vw;
+		width: 80vw;
 		margin: 1rem auto 0 auto;
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-gap: 1rem;
+		align-items: center;
 	}
 
 	&__item {

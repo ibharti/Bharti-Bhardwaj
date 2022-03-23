@@ -45,7 +45,8 @@
 	}
 	.projects {
 		&__items {
-			grid-template-columns: repeat(3, 2fr);
+			align-items: center;
+			grid-template-columns: repeat(2, 2fr);
 		}
 	}
 }
