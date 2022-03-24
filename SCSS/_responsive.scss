@@ -24,29 +24,31 @@
 		}
 	}
 
-	&__items {
-		grid-template-columns: repeat(2, 2fr);
-	}
-	.text-secondary {
-		font-size: 3rem;
-	}
-}
-
-.contact__list {
-	grid-template-columns: repeat(2, 2fr);
-}
-
-@include media-lg {
-	.menu-btn {
-		visibility: hidden;
-	}
-	.nav {
-		visibility: visible;
-	}
 	.projects {
 		&__items {
-			align-items: center;
 			grid-template-columns: repeat(2, 2fr);
+		}
+	}
+	.text-secondary {
+		font-size: 1rem;
+	}
+	.contact__list {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 1rem;
+	}
+
+	@include media-lg {
+		.menu-btn {
+			visibility: hidden;
+		}
+		.nav {
+			visibility: visible;
+		}
+		.projects {
+			&__items {
+				align-items: center;
+				grid-template-columns: repeat(2, 2fr);
+			}
 		}
 	}
 }
