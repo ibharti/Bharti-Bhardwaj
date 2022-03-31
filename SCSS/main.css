@@ -24,6 +24,24 @@
   color: #c97a36;
   font-weight: 700;
 }
+.home__button {
+  padding-top: 20vh;
+}
+.home__button__link {
+  text-align: center;
+  padding: 1rem;
+  font-size: xx-large;
+  border-width: 0.5px;
+  color: #282828;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+.home__button__link:hover {
+  color: #c97a36;
+  border-color: #fffefe;
+}
 
 .menu-btn {
   position: absolute;
