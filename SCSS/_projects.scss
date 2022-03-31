@@ -73,7 +73,7 @@
 
 	&__btn {
 		opacity: 0;
-		color: set-text-color($text-color);
+		color: $text-color;
 		@include transition-ease;
 
 		&:hover {

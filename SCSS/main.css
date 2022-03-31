@@ -226,7 +226,7 @@
 }
 .projects__btn {
   opacity: 0;
-  color: #fff;
+  color: #282828;
   transition: all 1s ease-in-out;
 }
 .projects__btn:hover {
