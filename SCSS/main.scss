@@ -12,7 +12,7 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	line-height: 1;
 	width: 100vw;
-	background: url("../Untitled\ design.png") center top;
+	background: url("../Untitled design.png") center top;
 }
 h1,
 h2,
@@ -40,14 +40,17 @@ main {
 		position: fixed;
 		bottom: 1rem;
 		left: 1rem;
-		color: $text-color;
+
+		align-items: center;
 
 		a {
 			padding: 0.4rem;
+			align-items: center;
 			@include transition-ease;
+			color: $secondary-color;
 
 			&:hover {
-				color: $secondary-color;
+				transform: scale(1.05);
 			}
 		}
 	}
@@ -57,7 +60,7 @@ footer {
 	position: fixed;
 	bottom: 0.4rem;
 	right: 1rem;
-	text-align: right;
+	text-align: center;
 	padding: 1rem;
 	color: $text-color;
 }

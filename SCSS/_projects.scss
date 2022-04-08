@@ -1,26 +1,31 @@
 .projects {
-	padding-bottom: 1rem;
-	display: flex;
+	// padding-bottom: 1rem;
+	// display: flex;
 	align-items: center;
 	overflow: hidden;
-	flex-direction: column;
+	// flex-direction: column;
 	padding-top: 15vh;
+	// background: linear-gradient(
+	// 		to right,
+	// 		rgba($primary-color, 0.9),
+	// 		rgba($primary-color, 0.3)
+	// 	),
+	// 	url("../Untitled design.png") center top;
+	// background-size: cover;
 
-	&__bio-image {
-		.text-secondary {
-			font-size: 3rem;
-			margin-top: 1rem;
-			// margin-bottom: 1rem;
-			text-align: center;
-			color: $text-color;
-		}
+	.text-secondary {
+		font-size: 3rem;
+		margin-top: 1rem;
+		// margin-bottom: 1rem;
+		text-align: center;
+		color: $text-color;
 	}
 
 	&__items {
-		width: 30vw;
-		margin: 1rem auto 0 auto;
+		width: 50vw;
+		margin: 2rem auto 0 auto;
 		display: grid;
-		grid-template-rows: 1fr;
+		grid-template-rows: 2fr;
 		grid-gap: 1rem;
 		align-items: center;
 	}
@@ -30,6 +35,9 @@
 		// border-bottom: 5px solid $primary-color;
 		overflow: hidden;
 		cursor: pointer;
+		color: $secondary-color;
+		text-align: center;
+		margin-bottom: 5px;
 
 		&::after {
 			content: "";
@@ -84,9 +92,5 @@
 	.social-icons {
 		display: flex;
 		flex-direction: column;
-	}
-
-	footer {
-		transform: rotate(90deg) translate(-3rem, -5rem);
 	}
 }
